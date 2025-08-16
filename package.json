@@ -1,8 +1,7 @@
 {
   "name": "toolchainai",
-  "version": "0.0.27", 
-  "description": "The zero-boilerplate LLM framework for humans.",
-  "type": "module",
+  "version": "0.0.2", 
+  "description": "A unified, zero-boilerplate framework for building powerful LLM agents with tool/function calling, multi-provider support, and seamless agent",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
