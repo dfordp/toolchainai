@@ -1,0 +1,53 @@
+{
+  "name": "toolchainai",
+  "version": "0.0.27", 
+  "description": "The zero-boilerplate LLM framework for humans.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "tsc -w --outDir dist",
+    "build": "tsc --outDir dist && node fix-imports.js",
+    "postbuild": "node fix-imports.js",
+    "clean": "rm -rf dist",
+    "start": "node ./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "llm",
+    "agent",
+    "openai",
+    "groq",
+    "typescript",
+    "ai-framework",
+    "lightweight",
+    "langchain-alternative"
+  ],
+  "author": "Himanshu Saini",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toolchainai/toolchainai"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.54.0",
+    "@google/genai": "^1.6.0",
+    "groq-sdk": "^0.25.0",
+    "openai": "^5.6.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "typescript": "^5.8.3"
+  }
+}
